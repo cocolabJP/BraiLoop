@@ -4,7 +4,7 @@ from app.schemas.pavement import PavementRes
 from app.core.supabase_client import supabase
 from app.filters.tactile_paving import TactilePavingFilter, apply_tactile_paving_filter
 
-router = APIRouter(prefix='/pavements', tags=['pavements'])
+router = APIRouter()
 
 @router.get('/', response_model=List[PavementRes], status_code=status.HTTP_200_OK)
 async def get_pavements(

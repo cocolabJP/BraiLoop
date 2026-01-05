@@ -1,6 +1,6 @@
 import type { Pavement } from "./types";
 
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = `${import.meta.env.VITE_API_URL}/${import.meta.env.VITE_API_VERSION}`;
 
 //=== Generic request function ===//
 async function request<T>(path: string, init: RequestInit = {}) {

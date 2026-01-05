@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api.v1.endpoints import pavements
+from app.api.v1.router import v1_router
 
-app = FastAPI()
+app = FastAPI(title='BraiLoop API')
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,4 +16,4 @@ app.add_middleware(
 async def health_check():
     return {'status': 'ok'}
 
-app.include_router(pavements.router)
+app.include_router(v1_router, prefix='/v1')

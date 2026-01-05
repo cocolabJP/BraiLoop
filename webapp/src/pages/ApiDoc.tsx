@@ -20,7 +20,7 @@ export default function ApiDoc() {
   const pavementsResParamsTable = [
     ['パラメータ', 'データ型', '補足'],
     ['id', 'uuid', ''],
-    ['camera_timestamp', 'datetime', '撮影時の時間 (JST)'],
+    ['camera_timestamp', 'datetime', '撮影時の時間'],
     ['latitude', 'float', '緯度'],
     ['latitude', 'float', '経度'],
     ['image_url', 'string', '路面画像のURL'],
@@ -34,7 +34,7 @@ export default function ApiDoc() {
       <div className="max-w-4xl mx-auto py-8 px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-2 mb-8">
           <h1 className="text-2xl md:text-3xl font-semibold">BraiLoop API ドキュメント</h1>
-          <p className="text-sm text-black/50">更新: 2026年1月1日</p>
+          <p className="text-sm text-black/50">更新: 2026年1月5日</p>
         </div>
         <Section heading="概要">
           <SubSection heading="URL">

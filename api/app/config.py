@@ -11,7 +11,6 @@ class Settings(BaseSettings):
     supabase_url: str = os.getenv('SUPABASE_URL', '')
     supabase_key: str = os.getenv('SUPABASE_KEY', '')
 
-    api_version: str = os.getenv('API_VERSION', '')
     debug_mode: str  = os.getenv('DEBUG_MODE', '')
 
     model_config = SettingsConfigDict(
