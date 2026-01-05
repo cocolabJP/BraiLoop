@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@plugin 'daisyui' {
+  themes: fantasy;
+}
+
+@theme {
+  --animate-fab-in: fab-in 200ms ease-out forwards;
+  --animate-fab-out: fab-out 200ms ease-in forwards;
+      
+  @keyframes fab-in {
+    0% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fab-out {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+    width: calc(var(--spacing) * 50);  /* w-50 */
+    border-radius: var(--radius-box);  /* cardコンポーネントのborder-radius */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+    padding: calc(var(--spacing) * 4);
+    max-height: 400px;
+    overflow: auto;
+}
+
+.custom-popup .leaflet-popup-content {
+    width: 100% !important;
+    /* margin: calc(var(--spacing) * 4); */
+    margin: 0;
+}
+
+.custom-popup .leaflet-popup-tip {
+  /* display: none; */
+}
+
+.custom-popup .leaflet-popup-close-button {
+    display: none;
+}
+
+/* モバイル対応：popup-smとかをつくる */

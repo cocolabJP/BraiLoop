@@ -1,0 +1,12 @@
+import AppRoutes from '@/routes/AppRoutes';
+import { BrowserRouter } from 'react-router';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-base-100 text-base-content">
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </div>
+  );
+}
