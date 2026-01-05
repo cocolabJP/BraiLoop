@@ -38,7 +38,7 @@ export default function ApiDoc() {
         </div>
         <Section heading="概要">
           <SubSection heading="URL">
-            Comming Soon...
+            <Code block>https://api.brailoop.cocolab.jp/v1/</Code>
           </SubSection>
           <SubSection heading="ステータスコード">
             <Table contents={statusCodeTable} centralizeIndices={[0]} boldIndices={[0]} maxWidth={600} />
