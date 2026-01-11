@@ -37,7 +37,7 @@ function NavLink({
       to={to}
       className={`
         text-sm font-semibold border-b-2 border-transparent pb-0.5 px-1 transition-all duration-200
-        hover:text-accent hover:border-accent
+        hover:text-tp-200 hover:border-tp-200
       `}
     >
       {children}

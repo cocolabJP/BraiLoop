@@ -5,28 +5,37 @@
 }
 
 @theme {
+  --color-tp-100: #ffc800;
+  --color-tp-200: #ff9d00;
+  
+
   --animate-fab-in: fab-in 200ms ease-out forwards;
   --animate-fab-out: fab-out 200ms ease-in forwards;
-      
-  @keyframes fab-in {
-    0% {
-      opacity: 0;
-      transform: translateY(12px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+@utility gradient-tp {
+  background-image: linear-gradient(180deg, var(--color-tp-100), var(--color-tp-200));
+}
+
+@keyframes fab-in {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
   }
-  @keyframes fab-out {
-    0% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(12px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fab-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
   }
 }
 
