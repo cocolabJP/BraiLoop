@@ -7,7 +7,7 @@ export default function NewsCard({
   news: News
 }) {
   return (
-    <li className="relative flex items-center gap-4 border border-base-300 rounded-md py-6 px-4">
+    <li className="relative flex items-center gap-4 border border-base-300 rounded-md py-4 md:py-6 px-4">
       <span className="absolute top-0 right-0 text-white text-xs font-semibold bg-black rounded-tr-md py-0.5 px-2">
         {news.type.toUpperCase()}
       </span>

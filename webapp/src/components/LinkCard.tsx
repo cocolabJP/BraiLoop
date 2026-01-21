@@ -16,10 +16,10 @@ export default function LinkCard({
   const Icon = icon;
 
   return (
-    <Link to={to} className="group flex items-center gap-4 max-w-[500px] border border-base-300 rounded-md mt-8 mx-auto transition-all duration-300">
+    <Link to={to} className="group flex items-center gap-4 max-w-[400px] border border-base-300 rounded-md mt-8 mx-auto transition-all duration-300">
       <div className="relative">
         <Icon
-          size={isMobile ? 48 : 64}
+          size={isMobile ? 48 : 56}
           className="
             relative z-10
             text-white bg-base-content rounded-l-md p-2     
@@ -28,7 +28,7 @@ export default function LinkCard({
           "
         />
         <Icon
-          size={64}
+          size={isMobile ? 48 : 56}
           className="
             absolute inset-0 opacity-0 rounded-l-md
             text-white gradient-tp p-2
