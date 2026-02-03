@@ -21,11 +21,14 @@ export default function Map({
   const popupRefs = useRef<Record<string, L.Popup | null>>({});
 
   return (
-    <MapContainer center={initPos} maxZoom={19} zoom={13} className='h-full w-full'>
+    <MapContainer center={initPos} maxZoom={22} zoom={13} className='h-full w-full'>
       <TileLayer
-        url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-        attribution='&copy; OpenStreetMap contributors'
-        maxZoom={19}
+        // url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+        url={`https://api.maptiler.com/maps/jp-mierune-streets/{z}/{x}/{y}.png?key=YsDTH5VVTMuX2aBkLE9W`}
+        attribution='&copy; MIERUNE | &copy; MapTiler | &copy; OpenStreetMap contributors'
+        tileSize={512}
+        zoomOffset={-1}
+        maxZoom={22}
       />
       <ResizeHandler />
       {/* <PopupCloseHandler onSelect={onSelect} /> */}
